@@ -7,11 +7,12 @@
 ## 使用說明
 
 下載此專案
+> git clone https://github.com/yiyu0x/Line_bot_quickly && cd Line_bot_quickly
 
 安裝套件
 > npm i
 
-將token填入 `.env` (line用token來辨認帳號 不要外流!) 
+將token填入 `.env`檔案中 (line用token來辨認帳號 不要外流!) 
 
 PORT 對應到的是 app.js 中聽的 port 如果要改，記得兩邊都要改
 ```
