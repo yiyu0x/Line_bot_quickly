@@ -9,15 +9,15 @@ const bot = linebot({
 
 // handle message
 bot.on('message', function (event) {
-	recv_msg = event.message.text
-	console.log('recv message:', recv_msg)
-	replay_msg = 'im a bot, your message is:\n' + recv_msg
-  //replay
-  event.reply(replay_msg).then(function (data) {
+    recv_msg = event.message.text
+    console.log('recv message:', recv_msg)
+    replay_msg = 'im a bot, your message is:\n' + recv_msg
+    //replay
+    event.reply(replay_msg).then(function (data) {
 
-  }).catch(function (error) {
+    }).catch(function (error) {
 
-  });
+    });
 });
 
 bot.listen('/hook', 3000, function () {
